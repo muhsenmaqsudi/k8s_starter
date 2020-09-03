@@ -14,3 +14,6 @@ kubectl set image deplyoment/client-deployment client=muhsenmaqsudi/multi-client
 kubectl get storageclass
 kubectl get pv (persistent volume)
 kubectl get pvc
+
+kubectl create secret generic pgpassword --from-literal PGPASSWORD=12345asdf
+kubectl get secrets
