@@ -10,3 +10,7 @@ kubectl get deployments
 kubectl logs server-deployment-\*
 
 kubectl set image deplyoment/client-deployment client=muhsenmaqsudi/multi-client:v2
+
+kubectl get storageclass
+kubectl get pv (persistent volume)
+kubectl get pvc
