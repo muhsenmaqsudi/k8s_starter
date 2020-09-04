@@ -25,3 +25,7 @@ kubectl port-forward deployment/postgres-deployment 5432:5432
 
 git rev-parse HEAD (\$GIT_SHA)
 env: - "SHA=\$(git rev-parse HEAD)"
+
+choco install -y skaffold
+skaffold dev
+skaffold delete
