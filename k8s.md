@@ -20,3 +20,8 @@ kubectl get secrets
 
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v0.35.0/deploy/static/provider/cloud/deploy.yaml
 kubectl get pods -n ingress-nginx
+
+kubectl port-forward deployment/postgres-deployment 5432:5432
+
+git rev-parse HEAD (\$GIT_SHA)
+env: - "SHA=\$(git rev-parse HEAD)"
