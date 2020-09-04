@@ -17,3 +17,6 @@ kubectl get pvc
 
 kubectl create secret generic pgpassword --from-literal PGPASSWORD=12345asdf
 kubectl get secrets
+
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v0.35.0/deploy/static/provider/cloud/deploy.yaml
+kubectl get pods -n ingress-nginx
